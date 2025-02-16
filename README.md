@@ -8,7 +8,7 @@ Ele tem como objetivo treinar um modelo Transformer para traduzir um conjunto de
 
 ### Pontos Positivos
 
-- 1. Processo de Inferência rápido.
+- 1. Tempo de inferência rápido.
 
 
 ### Pontos Negativos
@@ -28,3 +28,15 @@ Ele tem como objetivo treinar um modelo Transformer para traduzir um conjunto de
 
 - 3. Tradução incorreta. Talvez o dataset utilizado para treinar o modelo não seja suficientimente grande.
 ![ingles-portugues](/img/exemplo2.png)
+
+# Comparativo CPU x GPU
+
+Para testar o tempo que levaria utilizando a CPU, optei por rodar localmente no meu notebook.
+
+Para realizar 20 epocas, 4 camadas(Encoder/Decoder), 128 dimensões, tamanho 512 da camada G FeedForward e 8 Cabeças de atenção. Levou cerca de 4 horas para realizar o treinamento.
+
+![ingles-portugues](/img/duracao.png)
+
+Por outro lado, ao utilizar GPU, mais precisamente, a opção da T4 disponibilizado pelo google Colab demorou cerca de 33 minutos para treinar com 20 epocas e as mesmas configurações 
+
+![ingles-portugues](/img/duracao2.png)
